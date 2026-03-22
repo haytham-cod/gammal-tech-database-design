@@ -1,1 +1,103 @@
+{
+  "patients": {
+    "patient_id": "string",
+    "name": "string",
+    "email": "string",
+    "password_hash": "string",
+    "gender": "string",
+    "birth_date": "date",
+    "created_at": "timestamp"
+  },
 
+  "patient_profiles": {
+    "patient_id": "string",
+    "height_cm": "number",
+    "weight_kg": "number",
+    "activity_level": "low | medium | high",
+    "goal": "lose_weight | maintain | gain_muscle",
+    "updated_at": "timestamp"
+  },
+
+  "medical_records": {
+    "record_id": "string",
+    "patient_id": "string",
+    "condition": "string",
+    "notes": "string",
+    "created_at": "timestamp"
+  },
+
+  "doctors": {
+    "doctor_id": "string",
+    "name": "string",
+    "specialization": "string"
+  },
+
+  "appointments": {
+    "appointment_id": "string",
+    "patient_id": "string",
+    "doctor_id": "string",
+    "datetime": "timestamp",
+    "status": "scheduled | completed | cancelled"
+  },
+
+  "gyms": {
+    "gym_id": "string",
+    "name": "string",
+    "location": "string"
+  },
+
+  "exercises": {
+    "exercise_id": "string",
+    "name": "string",
+    "muscle_group": "string"
+  },
+
+  "workout_logs": {
+    "log_id": "string",
+    "patient_id": "string",
+    "gym_id": "string",
+    "date": "date"
+  },
+
+  "workout_details": {
+    "detail_id": "string",
+    "log_id": "string",
+    "exercise_id": "string",
+    "sets": "number",
+    "reps": "number",
+    "weight": "number"
+  },
+
+  "restaurants": {
+    "restaurant_id": "string",
+    "name": "string",
+    "location": "string"
+  },
+
+  "food_items": {
+    "food_id": "string",
+    "name": "string",
+    "calories": "number",
+    "protein": "number",
+    "carbs": "number",
+    "fat": "number"
+  },
+
+  "meal_logs": {
+    "meal_log_id": "string",
+    "patient_id": "string",
+    "food_id": "string",
+    "restaurant_id": "string",
+    "quantity": "number",
+    "date": "timestamp"
+  },
+
+  "ai_predictions": {
+    "prediction_id": "string",
+    "patient_id": "string",
+    "type": "risk | recommendation",
+    "reference_id": "string",
+    "confidence_score": "number",
+    "created_at": "timestamp"
+  }
+}
